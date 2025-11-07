@@ -1,0 +1,26 @@
+thead{
+    text-align: center;
+    justify-content: center;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+    text-align: center;
+}
+
+th, td{
+    padding: 8px;
+    border: 1px solid black;
+}
+
+caption{
+    
+}
