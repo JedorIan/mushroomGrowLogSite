@@ -10,8 +10,8 @@
 .mushroomHeader{
     width: auto;
     box-sizing: border-box;
-    margin: 0px;
     padding: 0;
+    margin: 0 10px 0 10px;
 }
 
 body{
@@ -29,6 +29,18 @@ body{
     font-size: 5vw;
     font-style: italic;
     margin: 0;
+}
+
+.infoCat{
+    margin-bottom: 0;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
+
+ul, p{
+    margin: 0 10px 0 10px;
 }
 
 
