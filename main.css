@@ -11,7 +11,9 @@
     width: auto;
     box-sizing: border-box;
     padding: 0;
-    margin: 0 10px 0 10px;
+    margin: 0;
+    border-bottom: solid black 1px;
+    background: linear-gradient(to bottom, #8C6A55, #C4A77D);
 }
 
 body{
@@ -22,25 +24,41 @@ body{
 .mushroomName{
     font-size: 20vw;
     font-weight: bold;
-    margin: 0;
+    margin: 0 10px 0 10px;
+    text-shadow: 3px 3px 5px gray;
 }
 
 .latinName{
     font-size: 5vw;
     font-style: italic;
-    margin: 0;
-}
-
-.infoCat{
-    margin-bottom: 0;
-    margin-right: 10px;
-    margin-left: 10px;
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
-}
-
-ul, p{
+    font-weight: bolder;
     margin: 0 10px 0 10px;
 }
 
+.infoCat{
+    margin: 0 10px 0 10px;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
+.mushroomInfo{
+    background: linear-gradient(to bottom, #C4A77D, #E7D7C1, #C4A77D, #8C6A55);
+    padding: 5px;
+}
 
+li, p{
+    margin: 0 10px 5px 10px;
+}
+
+th{
+    border: solid black 3px;
+}
+
+table{
+    table-layout: auto;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td{
+    b
+}
