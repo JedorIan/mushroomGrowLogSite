@@ -22,7 +22,7 @@ body{
 }
 
 .mushroomName{
-    font-size: 20vw;
+    font-size: 15vw;
     font-weight: bold;
     margin: 0 10px 0 10px;
     text-shadow: 3px 3px 5px gray;
@@ -39,14 +39,16 @@ body{
     margin: 0 10px 0 10px;
     text-decoration: underline;
     text-decoration-thickness: 3px;
+    font-size: 5vw;
 }
 .mushroomInfo{
     background: linear-gradient(to bottom, #C4A77D, #E7D7C1, #C4A77D, #8C6A55);
     padding: 5px;
 }
 
-li, p{
-    margin: 0 10px 5px 10px;
+li{
+    margin: 0px 10px 0 10px;
+    font-size: 2.5vw;
 }
 
 th{
@@ -60,5 +62,9 @@ table{
 }
 
 td{
-    b
+    border: solid black 1px;
+}
+
+p{
+    margin: 
 }
