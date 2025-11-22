@@ -17,8 +17,17 @@ h2{
 .titleBlock{
     padding: 10px;
     background: linear-gradient(to bottom, #ede7f6, #d1c4e9);
-    
     border: solid #b39ddb 5px;
     border-radius: 50px;
     margin: 20px;
+}
+
+.shiitakeBlock h3{
+    text-decoration: none;
+    flex: 1;
+}
+
+.shiitakeBlock{
+    display: flex;
+    align-items: center;
 }
