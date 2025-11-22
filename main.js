@@ -1,11 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const headerElement = document.querySelector('header');
-  if (!headerElement) return;
+  // Find the element where you want to insert the header
+  // This can be <header>, <div id="header">, etc.
+  const container = document.querySelector('header'); // or 'header', etc.
+  if (!container) return;
 
   // Determine path to header.html depending on page location
-  let pathToHeader = window.location.pathname.includes('/mushrooms/')
-                     ? '../header.html'  // pages inside /mushrooms/
-                     : './header.html';  // pages in root
+  const pathToHeader = window.location.pathname.includes('/mushrooms/')
+                       ? '../header.html' // pages in /mushrooms/
+                       : './header.html'; // pages in root
 
   fetch(pathToHeader)
     .then(res => {
@@ -13,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return res.text();
     })
     .then(data => {
-      headerElement.innerHTML = data;
+      container.innerHTML = data;
     })
     .catch(err => console.error('Error loading header:', err));
 });
