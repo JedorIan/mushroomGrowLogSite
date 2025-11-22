@@ -22,7 +22,7 @@ h2{
     margin: 20px;
 }
 
-.shiitakeBlock h3{
+.textBlock{
     text-decoration: none;
     flex: 1;
 }
@@ -30,4 +30,14 @@ h2{
 .shiitakeBlock{
     display: flex;
     align-items: center;
+    padding:35px;
+}
+
+.shroomImage{
+    width: 25vw;
+    height: auto;
+}
+
+h3{
+    text-decoration: none;
 }
