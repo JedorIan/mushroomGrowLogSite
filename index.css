@@ -1,3 +1,24 @@
 body{
     background: linear-gradient(to bottom, #f7f4ee, #e5e1da, #d8d4cc);
 }
+
+h1{
+    font-size: 8vw;
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    margin: 0;
+}
+
+h2{
+    font-size: 6vw;
+    margin: 0;
+}
+
+.titleBlock{
+    padding: 10px;
+    background: linear-gradient(to bottom, #ede7f6, #d1c4e9);
+    
+    border: solid #b39ddb 5px;
+    border-radius: 50px;
+    margin: 20px;
+}
