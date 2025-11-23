@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(to bottom, #f7f4ee, #e5e1da, #d8d4cc);
+    background: #f6f1e9;
 }
 
 h1{
@@ -42,4 +42,19 @@ h2{
 
 h3{
     text-decoration: none;
+}
+
+#lionsBlock{
+    border: dashed #d6c7a1 4px;
+    background-color: #f7f4ed;
+    margin: 30px;
+    padding: 5px;
+    border-radius: 10px 20px 10px 20px;
+}
+
+.mushroomMeet{
+    border: solid #c7c2ba 4px;
+    margin: 15px;
+    border-radius: 10px;
+    background
 }
