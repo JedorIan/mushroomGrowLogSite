@@ -25,7 +25,7 @@ h2{
 .textBlock{
     text-decoration: none;
     flex: 1;
-    border: solid black 2px;
+    border: solid black 5px;
     border-radius: 20px;
 }
 
@@ -35,30 +35,35 @@ h2{
 }
 
 h3{
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-thickness:3px;
+    font-size: 4vw;
 }
 
 .mushBlock{
-    border: dashed #4a3728 2px;
     display: flex;
     align-items: center;
-    margin: 30px;
-    padding: 5px;
+    margin: 8vw;
+    padding: 15px;
     border-radius: 10px 20px 10px 20px;
-    box-shadow: 4px 5px gray;
 }
 
 .mushroomMeet{
-    border: solid black 4px;
+    border: solid black 5px;
     margin: 15px;
     border-radius: 10px;
-    background-color: #f6f1e9;
-}
-
-#lionsBlock{
-    transform: rotate(3deg);
+    background-color: rgba(246, 241, 233, 0.6);
+    
 }
 
 #shiiBlock{
     transform: rotate(-3deg);
+    box-shadow: -6px 6px gray;
+    background: linear-gradient(to bottom, #a07a5a 0%, #f3eadf 100%);
+}
+
+#lionsBlock{
+    transform: rotate(3deg);
+    box-shadow: 6px 6px gray;
+    background: linear-gradient(to bottom, #f9f9f7 0%, #f3eee5 100%);
 }
