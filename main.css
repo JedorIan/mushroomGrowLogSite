@@ -78,9 +78,13 @@ p{
     font-size: 3vw;
 }
 
-h3{
+.infoCat{
     font-size: 5vw;
     margin: 5px 0 0 0;
     text-decoration: underline;
     text-decoration-thickness: 3px;
+}
+
+a{
+    text-decoration: none;
 }
