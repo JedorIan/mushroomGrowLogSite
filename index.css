@@ -1,5 +1,5 @@
 body{
-    background: #f6f1e9;
+    background: #4a3f5c;
 }
 
 h1{
@@ -29,12 +29,6 @@ h2{
     border-radius: 20px;
 }
 
-.mushBlock{
-    display: flex;
-    align-items: center;
-    padding: 35px;
-}
-
 .shroomImage{
     width: 25vw;
     height: auto;
@@ -44,17 +38,27 @@ h3{
     text-decoration: none;
 }
 
-#lionsBlock{
-    border: dashed #d6c7a1 4px;
-    background-color: #f7f4ed;
+.mushBlock{
+    border: dashed #4a3728 2px;
+    display: flex;
+    align-items: center;
     margin: 30px;
     padding: 5px;
     border-radius: 10px 20px 10px 20px;
+    box-shadow: 4px 5px gray;
 }
 
 .mushroomMeet{
-    border: solid #c7c2ba 4px;
+    border: solid black 4px;
     margin: 15px;
     border-radius: 10px;
-    background
+    background-color: #f6f1e9;
+}
+
+#lionsBlock{
+    transform: rotate(3deg);
+}
+
+#shiiBlock{
+    transform: rotate(-3deg);
 }
