@@ -58,12 +58,12 @@ h3{
 
 #shiiBlock{
     transform: rotate(-3deg);
-    box-shadow: -6px 6px 12px gray;
+    box-shadow: -6px 6px 12px black;
     background: linear-gradient(to bottom, #a07a5a 0%, #f3eadf 100%);
 }
 
 #lionsBlock{
     transform: rotate(3deg);
-    box-shadow: 6px 6px 12px gray;
+    box-shadow: 6px 6px 12px black;
     background: linear-gradient(to bottom, #f9f9f7 0%, #f3eee5 100%);
 }
