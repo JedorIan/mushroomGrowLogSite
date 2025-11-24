@@ -1,5 +1,9 @@
 body{
+    display: flex;
+    flex-direction: column;
     background: #4a3f5c;
+    justify-content: center;
+    align-items: center;
 }
 
 h1{
@@ -15,19 +19,29 @@ h2{
 }
 
 .titleBlock{
-    padding: 10px;
-    background: linear-gradient(to bottom, #ede7f6, #d1c4e9);
+    width: 75vw;
+    background: linear-gradient(to bottom, #4caf50 0%, #87ceeb 40%, #556b2f 70%, #a0522d 100%);
     border: solid #b39ddb 5px;
-    border-radius: 50px;
+    border-radius: 53%;
     margin: 20px;
 }
 
 .textBlock{
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
     flex: 1;
     border: solid black 5px;
     border-radius: 20px;
     padding: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.logoImg{
+    width: 75vw;
+    height: auto;
 }
 
 .shroomImage{
@@ -39,7 +53,7 @@ h3{
     text-decoration: underline;
     text-decoration-thickness:3px;
     font-size: 5vw;
-    margin-bottom: 3px;
+    margin: 3px;
 }
 
 .mushBlock{
