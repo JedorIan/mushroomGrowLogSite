@@ -52,18 +52,18 @@ h3{
     border: solid black 5px;
     margin: 15px;
     border-radius: 10px;
-    background-color: rgba(246, 241, 233, 0.6);
+    background-color: #9a8fa8;
     
 }
 
 #shiiBlock{
     transform: rotate(-3deg);
-    box-shadow: -6px 6px 12px black;
+    box-shadow: -6px 6px 12px #5e5669;
     background: linear-gradient(to bottom, #a07a5a 0%, #f3eadf 100%);
 }
 
 #lionsBlock{
     transform: rotate(3deg);
-    box-shadow: 6px 6px 12px black;
+    box-shadow: 6px 6px 12px #5e5669;
     background: linear-gradient(to bottom, #f9f9f7 0%, #f3eee5 100%);
 }
