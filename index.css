@@ -38,7 +38,8 @@ h2{
 h3{
     text-decoration: underline;
     text-decoration-thickness:3px;
-    font-size: 4vw;
+    font-size: 5vw;
+    margin-bottom: 3px;
 }
 
 .mushBlock{
@@ -47,6 +48,7 @@ h3{
     margin: 8vw;
     padding: 15px;
     border-radius: 10px 20px 10px 20px;
+    border: solid rgba(0, 0, 0, 0.7) 2px;
 }
 
 .mushroomMeet{
@@ -75,6 +77,7 @@ h3{
     transform:rotate(-3deg);
     transition: transform 0.3s ease;
     box-shadow: -6px 6px 12px #5e5669;
+    background: linear-gradient(to top, #c7d7e8, #8fa9c7);
 
 }
 
