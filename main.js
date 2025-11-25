@@ -2,14 +2,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const container = document.querySelector('header');
   if (!container) return;
 
-  // 1️⃣ Detect how deep the current page is relative to root
-  const pathParts = window.location.pathname.split('/').filter(Boolean);
-  const depth = pathParts.length > 1 ? pathParts.length - 1 : 0;
-
-  // 2️⃣ Determine path to header.html relative to current page
-  let pathToHeader = '';
-  for (let i = 0; i < depth; i++) pathToHeader += '../';
-  pathToHeader += 'header.html';
+  // 1️⃣ Determine the base path
+  // On GitHub Pages: window.location.origin = https://username.github.io
+  // Locally: use relative path from the current HTML file
+  const isLocal = window.location.protocol === 'file:';
+  const pathToHeader = isLocal ? 'header.html' : '/header.html';
 
   fetch(pathToHeader)
     .then(res => {
@@ -19,18 +16,17 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(data => {
       container.innerHTML = data;
 
-      // 3️⃣ Fix relative links inside the header
+      // 2️⃣ Fix links inside header
       container.querySelectorAll('a').forEach(link => {
         const href = link.getAttribute('href');
         if (!href || href.startsWith('http') || href.startsWith('#')) return;
 
-        // Determine if link is root or folder-relative
-        const isRootLink = href.startsWith('/') || href === 'index.html';
-        if (!isRootLink) {
-          // Prepend correct number of "../" for current depth
-          let prefix = '';
-          for (let i = 1; i < depth; i++) prefix += '../';
-          link.setAttribute('href', prefix + href);
+        if (isLocal) {
+          // Locally: keep relative paths (relative to current HTML file)
+          link.setAttribute('href', href);
+        } else {
+          // GitHub Pages: prepend slash for root-relative links
+          if (!href.startsWith('/')) link.setAttribute('href', '/' + href);
         }
       });
     })
