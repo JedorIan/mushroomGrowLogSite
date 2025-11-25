@@ -2,13 +2,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const container = document.querySelector('header');
   if (!container) return;
 
-  // 1️⃣ Determine the current folder (if any)
+  // 1️⃣ Detect how deep the current page is relative to root
   const pathParts = window.location.pathname.split('/').filter(Boolean);
-  // Example: /grows/page.html → pathParts = ['grows', 'page.html']
-  const currentFolder = pathParts.length > 1 ? pathParts[pathParts.length - 2] : '';
+  const depth = pathParts.length > 1 ? pathParts.length - 1 : 0;
 
-  // 2️⃣ Determine path to header.html
-  const pathToHeader = currentFolder ? `../header.html` : './header.html';
+  // 2️⃣ Determine path to header.html relative to current page
+  let pathToHeader = '';
+  for (let i = 0; i < depth; i++) pathToHeader += '../';
+  pathToHeader += 'header.html';
 
   fetch(pathToHeader)
     .then(res => {
@@ -18,14 +19,18 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(data => {
       container.innerHTML = data;
 
-      // 3️⃣ Fix relative links inside the inserted header
+      // 3️⃣ Fix relative links inside the header
       container.querySelectorAll('a').forEach(link => {
         const href = link.getAttribute('href');
         if (!href || href.startsWith('http') || href.startsWith('#')) return;
 
-        // Prepend folder only if link isn’t already absolute and isn’t pointing to another folder
-        if (currentFolder && !href.startsWith(`${currentFolder}/`)) {
-          link.setAttribute('href', `${currentFolder}/${href}`);
+        // Determine if link is root or folder-relative
+        const isRootLink = href.startsWith('/') || href === 'index.html';
+        if (!isRootLink) {
+          // Prepend correct number of "../" for current depth
+          let prefix = '';
+          for (let i = 1; i < depth; i++) prefix += '../';
+          link.setAttribute('href', prefix + href);
         }
       });
     })
