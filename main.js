@@ -3,7 +3,10 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!container) return;
 
   // Determine path to header.html depending on folder depth
-  const pathToHeader = './header.html'; // assumes header.html is in the same folder as the page
+  const folderPrefix = '../';
+
+  const folderPrefix = '';
+  const pathToHeader = folderPrefix + 'header.html'; // assumes header.html is in the same folder as the page
 
   fetch(pathToHeader)
     .then(res => {
