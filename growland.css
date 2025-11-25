@@ -1,0 +1,20 @@
+.logLinks{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    margin: 4vw;
+    border: solid black 3px;
+    border-radius: 25px;
+}
+
+.mushGL{
+    border: solid black 2px;
+    margin: 3vw 3vw 3vw 3vw;
+    border-radius: 15px;
+}
+
+h2{
+    font-size: 5vw;
+}
