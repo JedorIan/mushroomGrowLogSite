@@ -16,6 +16,25 @@ header{
     border-bottom: solid black 5px;
 }
 
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header a{
+    font-size: 3vw;
+    display: inline-block;
+    text-align: center;
+    padding: 2vw;
+}
+
+header a span{
+    display: block;
+    margin: 0 0 0 0;
+}
+
 body{
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
@@ -87,5 +106,6 @@ p{
 
 a{
     text-decoration: none;
+    font-weight: bold;
     color: black;
 }
