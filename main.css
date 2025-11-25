@@ -15,7 +15,7 @@ header{
     margin: 0;
     border-bottom: solid black 5px;
     color: rgba(246, 241, 233, 75%);
-    background: rgba(46, 61, 40, 75%);
+    background: #353e35;
 }
 
 nav{
@@ -33,7 +33,11 @@ header a{
     padding: 2vw;
     background: rgba(85, 107, 47, 50%);
     border-radius: 25%;
-    margin-bottom: 2vw;
+    margin: 2vw 0 2vw 0;
+}
+
+header a:hover{
+    background: purple;
 }
 
 header a span{
