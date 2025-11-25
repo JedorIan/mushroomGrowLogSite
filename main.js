@@ -2,10 +2,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const container = document.querySelector('header');
   if (!container) return;
 
-  // Determine path to header.html depending on folder depth
-  const pathToHeader = window.location.pathname.includes('/mushrooms/')
-                       ? '../header.html'
-                       : './header.html';
+  // 1️⃣ Determine the current folder (if any)
+  const pathParts = window.location.pathname.split('/').filter(Boolean);
+  // Example: /grows/page.html → pathParts = ['grows', 'page.html']
+  const currentFolder = pathParts.length > 1 ? pathParts[pathParts.length - 2] : '';
+
+  // 2️⃣ Determine path to header.html
+  const pathToHeader = currentFolder ? `../header.html` : './header.html';
 
   fetch(pathToHeader)
     .then(res => {
@@ -15,13 +18,16 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(data => {
       container.innerHTML = data;
 
-      // Fix relative links inside the inserted header
-      if (window.location.pathname.includes('/mushrooms/')) {
-        container.querySelectorAll('a').forEach(link => {
-          const href = link.getAttribute('href');
-          link.setAttribute('href', '../' + href);
-        });
-      }
+      // 3️⃣ Fix relative links inside the inserted header
+      container.querySelectorAll('a').forEach(link => {
+        const href = link.getAttribute('href');
+        if (!href || href.startsWith('http') || href.startsWith('#')) return;
+
+        // Prepend folder only if link isn’t already absolute and isn’t pointing to another folder
+        if (currentFolder && !href.startsWith(`${currentFolder}/`)) {
+          link.setAttribute('href', `${currentFolder}/${href}`);
+        }
+      });
     })
     .catch(err => console.error('Error loading header:', err));
 });
