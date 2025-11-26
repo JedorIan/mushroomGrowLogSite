@@ -1,13 +1,3 @@
-.headerFile{
-    height: 50px;
-    width: 100%;
-    border-bottom: solid black 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: white;
-}
-
 header{
     width: 100%;
     box-sizing: border-box;
