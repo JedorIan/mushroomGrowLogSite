@@ -125,3 +125,7 @@ p{
     margin: 5px;
     font-size: 3vw;
 }
+
+.secHeader{
+    text-decoration: underline;
+}
