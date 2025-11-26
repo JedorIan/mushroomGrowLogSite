@@ -21,9 +21,10 @@ header a{
     text-align: center;
     color: #f6f1e9;
     padding: 2vw;
-    background: rgba(85, 107, 47);
+    background: #242924;
     border-radius: 20px;
     margin: 2vw 0 2vw 0;
+    box-shadow: 0 0 20px 5px #242924;
 }
 
 header a:hover{
