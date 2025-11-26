@@ -1,6 +1,6 @@
-.logLinks a{
+.logLinks{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     justify-content: center;
     align-items: center;
     gap: 5vw;
@@ -10,13 +10,15 @@
     background: #9a8fa8;
 }
 
+.logLinks a{
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
 .mushGL{
     border: solid black 2px;
     margin: 3vw 3vw 3vw 3vw;
     border-radius: 15px;
     background: #f5dc90;
-}
-
-h2{
-    font-size: 5vw;
 }
