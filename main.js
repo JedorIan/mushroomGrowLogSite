@@ -1,38 +1,25 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const container = document.querySelector('header');
-  if (!container) return;
+document.addEventListener("DOMContentLoaded", function () {
+    // Count how many folders deep this page is
+    const pathParts = window.location.pathname
+        .split("/")
+        .filter(p => p.length > 0);
 
-  const isLocal = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+    // If the file is in root, pathParts length is 1 (the filename)
+    // If it's in /mushrooms/page.html, length is 2, etc.
+    const depth = pathParts.length - 1;
 
-  // Detect GitHub Pages repo name automatically
-  const path = window.location.pathname.split('/');
-  const repo = path.length > 2 ? `/${path[1]}/` : '/';
+    // Build correct relative path
+    let headerPath = "";
+    for (let i = 0; i < depth; i++) {
+        headerPath += "../";
+    }
+    headerPath += "header.html";
 
-  // Count how deep this page is (folders)
-  const depth = path.filter(Boolean).length - 1;
-
-  // Local: go up as many folders as needed
-  const localPrefix = '../'.repeat(depth);
-
-  // GitHub Pages: root is either "/" or "/repo/"
-  const rootPrefix = isLocal ? localPrefix : repo;
-
-  fetch(rootPrefix + 'header.html')
-    .then(res => res.text())
-    .then(html => {
-      container.innerHTML = html;
-
-      // Fix links
-      container.querySelectorAll('a').forEach(link => {
-        const href = link.getAttribute('href');
-        if (!href || href.startsWith('http') || href.startsWith('#')) return;
-
-        if (isLocal) {
-          link.setAttribute('href', localPrefix + href);
-        } else {
-          link.setAttribute('href', repo + href);
-        }
-      });
-    })
-    .catch(err => console.error('Header load error:', err));
+    // Load the header HTML
+    fetch(headerPath)
+        .then(response => response.text())
+        .then(data => {
+            document.querySelector("header").innerHTML = data;
+        })
+        .catch(err => console.error("Header load failed:", err));
 });
