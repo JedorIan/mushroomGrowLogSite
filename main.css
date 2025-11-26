@@ -16,7 +16,7 @@ nav{
 }
 
 header a{
-    font-size: 4vw;
+    font-size: 2vw;
     display: inline-block;
     text-align: center;
     color: #f6f1e9;
@@ -33,6 +33,7 @@ header a:hover{
 header a span{
     display: block;
     margin: 0 0 0 0;
+
 }
 
 header h1{
