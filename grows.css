@@ -21,10 +21,7 @@
     background: #f5dc90;
 }
 
-.mushGL{
-    border-right: solid black 2px;
-    padding: 3vw;
-
-    border-radius: 15px;
-    background: green;
+h2{
+    border-right: solid black 3px;
+    margin: 3vw;
 }
