@@ -26,7 +26,8 @@ header a{
 
 header a:hover{
     filter: invert(1);
-    background: white;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
 }
 
 header a span{
