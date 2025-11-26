@@ -24,7 +24,7 @@ header a{
     background: #242924;
     border-radius: 20px;
     margin: 4vw 0 4vw 0;
-    box-shadow: 0 5px 10px 7px rgba(36, 41, 36, 1);
+    box-shadow: 0 -3px 10px 4px rgba(36, 41, 36, 1);
 }
 
 header a:hover{
