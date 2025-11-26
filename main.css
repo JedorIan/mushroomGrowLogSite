@@ -26,6 +26,7 @@ header a{
 
 header a:hover{
     filter: invert(1);
+    background: white;
 }
 
 header a span{
