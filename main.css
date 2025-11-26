@@ -5,7 +5,7 @@ header{
     margin: 0;
     border-bottom: solid black 5px;
     color: rgba(246, 241, 233, 75%);
-    background: #353e35;
+    background: linear-gradient(to top, black 3%, rgba(36, 41, 36, 1) 10%, #4a3f5c);
 }
 
 nav{
@@ -131,11 +131,4 @@ p{
 .secHeader{
     text-decoration: underline;
     font-size: 8vw;
-}
-
-#headerTitle{
-    background: linear-gradient(to top, #242924 5%, transparent, transparent);
-    padding: 2vw 2vw 0 2vw;
-    display: inline-block;
-    border-radius: 3px;
 }
