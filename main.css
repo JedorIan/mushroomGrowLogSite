@@ -55,6 +55,7 @@ body{
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     background: #4a3f5c;
+    font-weight: bold;
 }
 
 .mushroomName{
@@ -105,12 +106,6 @@ tbody tr:nth-child(even){
 td{
     border: solid black 1px;
     font-size: 3vw;
-}
-
-p{
-    margin: 0 0 10px 0;
-    font-weight: bold;
-    font-size: 4vw;
 }
 
 .infoCat{
