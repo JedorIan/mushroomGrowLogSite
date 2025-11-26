@@ -134,7 +134,7 @@ p{
 
 #headerTitle{
     background: linear-gradient(to top, #242924 5%, transparent, transparent);
-    padding: 2vw;
+    padding: 2vw 2vw 0 2vw;
     display: inline-block;
-    border-radius: 10px;
+    border-radius: 3px;
 }
