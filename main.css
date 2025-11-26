@@ -26,18 +26,18 @@ nav{
 }
 
 header a{
-    font-size: 3vw;
+    font-size: 4vw;
     display: inline-block;
     text-align: center;
     color: #f6f1e9;
     padding: 2vw;
     background: rgba(85, 107, 47, 50%);
-    border-radius: 25%;
+    border-radius: 40%;
     margin: 2vw 0 2vw 0;
 }
 
 header a:hover{
-    background: purple;
+    filter: invert(1);
 }
 
 header a span{
