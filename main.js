@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     // Always load header.html from the root
-    fetch("/header.html")
+    fetch("/mushroomgrow/header.html")
         .then(response => response.text())
         .then(html => {
             const header = document.querySelector("header");
