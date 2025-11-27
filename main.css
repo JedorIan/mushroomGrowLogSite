@@ -5,7 +5,7 @@ header{
     margin: 0;
     border-bottom: solid black 5px;
     color: rgba(246, 241, 233, 75%);
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.1) 8%, rgba(36, 41, 36, 1) 10%, #342f3d);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 8%, rgba(36, 41, 36, 1) 10%, #342f3d);
 }
 
 nav{
