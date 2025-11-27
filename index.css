@@ -100,5 +100,5 @@ a{
 }
 
 .left:hover, .right:hover{
-    transform: rotate(360deg);
+    transform: rotate(0deg);
 }
