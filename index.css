@@ -73,7 +73,7 @@ h3{
     
 }
 
-.left{
+.lTilt{
     box-shadow: -6px 6px 12px #5e5669;
     transform: rotate(-3deg);
     transition: transform 0.3s ease;
@@ -83,7 +83,7 @@ h3{
     background: linear-gradient(to bottom, #a07a5a 0%, #f3eadf 100%);
 }
 
-.right{
+.rTilt{
     transform: rotate(3deg);
     transition: transform 0.3s ease;
     box-shadow: 6px 6px 12px #5e5669;
@@ -98,6 +98,6 @@ h3{
 
 }
 
-.left:hover, .right:hover{
+.lTilt:hover, .rTilt:hover{
     transform: rotate(0deg);
 }
