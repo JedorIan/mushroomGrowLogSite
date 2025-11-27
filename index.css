@@ -76,6 +76,7 @@ h3{
 .milk{
     box-shadow: -6px 6px 12px #5e5669;
     transform: rotate(-3deg);
+    display: inline-block;
 }
 
 #shiiBlock{
@@ -85,6 +86,7 @@ h3{
 .dog{
     transform: rotate(3deg);
     box-shadow: 6px 6px 12px #5e5669;
+    display: inline-block;
 }
 
 #lionsBlock{
