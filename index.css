@@ -73,28 +73,31 @@ h3{
     
 }
 
-#shiiBlock{
+#leftTilt{
     box-shadow: -6px 6px 12px #5e5669;
     transform: rotate(-3deg);
     transition: transform 0.3s ease;
+}
+
+#shiiBlock{
     background: linear-gradient(to bottom, #a07a5a 0%, #f3eadf 100%);
 }
 
-#lionsBlock{
+#rightTilt{
     transform: rotate(3deg);
     transition: transform 0.3s ease;
     box-shadow: 6px 6px 12px #5e5669;
+}
+
+#lionsBlock{
     background: linear-gradient(to bottom, #f9f9f7 0%, #f3eee5 100%);
 }
 
 #blueBlock{
-    transform:rotate(-3deg);
-    transition: transform 0.3s ease;
-    box-shadow: -6px 6px 12px #5e5669;
     background: linear-gradient(to top, #c7d7e8, #8fa9c7);
 
 }
 
-#lionsBlock:hover, #shiiBlock:hover, #blueBlock:hover{
+#leftTilt:hover, #rightTilt:hover{
     transform: rotate(0deg);
 }
