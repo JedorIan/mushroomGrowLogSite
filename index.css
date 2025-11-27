@@ -92,13 +92,11 @@ a{
 .right{
     transform: rotate(3deg);
     transition: transform 0.3s ease;
-    box-shadow: 6px 6px 3px gray;
 }
 
 .left{
     transform: rotate(-3deg);
     transition: transform 0.3s ease;
-    box-shadow: 6px 6px 3px gray;
 }
 
 .left:hover, .right:hover{
