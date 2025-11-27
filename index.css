@@ -73,22 +73,8 @@ h3{
     
 }
 
-.lTilt{
-    box-shadow: -6px 6px 12px #5e5669;
-    transform: rotate(-3deg);
-    display: inline-block;
-    transition: transform 0.3s ease;
-}
-
 #shiiBlock{
     background: linear-gradient(to bottom, #a07a5a 0%, #f3eadf 100%);
-}
-
-.rTilt{
-    transform: rotate(3deg);
-    box-shadow: 6px 6px 12px #5e5669;
-    display: inline-block;
-    transition: transform 0.3s ease;
 }
 
 #lionsBlock{
@@ -97,13 +83,18 @@ h3{
 
 #blueBlock{
     background: linear-gradient(to top, #c7d7e8, #8fa9c7);
-
-}
-
-.lTilt:hover, .rTilt:hover{
-    transform: rotate(0deg);
 }
 
 a{
     display: block;
+}
+
+.right{
+    transform: rotate(3deg);
+    transition: transform 0.3s ease;
+}
+
+.left{
+    transform: rotate(-3deg);
+    transition: transform 0.3s ease;
 }
