@@ -103,3 +103,7 @@ h3{
 .lTilt:hover, .rTilt:hover{
     transform: rotate(0deg);
 }
+
+a{
+    display: block;
+}
