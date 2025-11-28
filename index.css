@@ -109,9 +109,5 @@ a{
     width: 30vw;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-}
-
-.testBlock{
-
+    grid-template-columns: repeat(2, 1fr);
 }
