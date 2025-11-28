@@ -108,11 +108,12 @@ a .left, a .right{
 .testing a {
     width: 30vw;
     height: auto;
-    display: inline-block;
+    display: block;
 }
 
 .testBlock{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    column-count: 2;
+
 }
