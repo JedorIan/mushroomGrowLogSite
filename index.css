@@ -106,5 +106,9 @@ a{
 
 
 .testBlock{
-    
+    width: 30vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    columns: 2 1fr;
 }
