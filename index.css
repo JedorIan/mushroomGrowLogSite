@@ -86,7 +86,7 @@ h3{
     background: linear-gradient(to top, #c7d7e8, #8fa9c7);
 }
 
-a:left, a:right{
+a{
     display: block;
 }
 
@@ -108,6 +108,12 @@ a:left, a:right{
 .testAnchor{
     width: 30vw;
     height: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: block;
+}
+
+.testBlock{
+    display: flex;
+    flex-direction: column;
+    
+
 }
