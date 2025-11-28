@@ -86,7 +86,7 @@ h3{
     background: linear-gradient(to top, #c7d7e8, #8fa9c7);
 }
 
-a{
+a .left, a .right{
     display: block;
 }
 
@@ -108,7 +108,7 @@ a{
 .testing a {
     width: 30vw;
     height: auto;
-    display: block;
+    display: inline-block;
 }
 
 .testBlock{
