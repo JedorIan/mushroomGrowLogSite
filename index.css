@@ -108,7 +108,10 @@ a{
 .testAnchor{
     width: 30vw;
     height: auto;
+    display: block;
+}
+
+.testBlock{
     display: flex;
-    flex-direction: column;
-    columns: 2 1fr;
+    flex-direction: column (2, 1fr);
 }
