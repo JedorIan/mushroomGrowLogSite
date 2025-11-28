@@ -105,15 +105,14 @@ a{
 }
 
 
-.testAnchor{
+.testing a {
     width: 30vw;
     height: auto;
     display: block;
 }
 
 .testBlock{
-    display: flex;
-    flex-direction: column;
-    
-
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
 }
