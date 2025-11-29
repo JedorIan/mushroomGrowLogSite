@@ -9,8 +9,9 @@ header{
     border-bottom: solid black 5px;
     color: rgba(246, 241, 233);
     background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(36, 41, 36, 1), #342f3d);
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    justify-content: center;
     align-items: center;
 }
 
