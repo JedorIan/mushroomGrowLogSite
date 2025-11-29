@@ -110,6 +110,11 @@ a{
 
 .testInfo{
     display: flex;
+    align-items: center;
+}
+
+.testText{
+    display: flex;
     flex-direction: column;
     flex: 1;
 }
