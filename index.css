@@ -50,7 +50,7 @@ h2{
 .indexImage{
     width: 100%;
     object-fit: cover;
-    height: auto;
+    height: 100%;
 }
 
 h3{
