@@ -118,6 +118,7 @@ a{
     display: flex;
     flex-direction: column;
     margin: 10px 40px -10px -30px;
+    padding: 10px;
     flex: 1;
     background: white;
 
