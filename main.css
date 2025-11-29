@@ -45,7 +45,6 @@ body{
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    background: #4a3f5c;
     font-weight: bold;
 }
 
@@ -124,7 +123,7 @@ h2{
 
 p{
     margin: 5px;
-    font-size: 3vw;
+    font-size: 4vw;
 }
 
 .secHeader{

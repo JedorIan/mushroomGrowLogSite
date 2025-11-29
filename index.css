@@ -38,7 +38,6 @@ h2{
     justify-content: center;
     align-items: center;
     text-align: center;
-    text-shadow: 0 0 0 white;
 }
 
 .logoImg{
@@ -54,7 +53,7 @@ h2{
 h3{
     text-decoration: underline;
     text-decoration-thickness:3px;
-    font-size: 5vw;
+    font-size: 7vw;
     margin: 3px;
 }
 
