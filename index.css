@@ -79,24 +79,3 @@ a{
 }
 
 
-
-.testBlock{
-    width: 100%;
-}
-
-.testInfo{
-    display: flex;
-    align-items: center;
-    padding: 20px;
-}
-
-.testText{
-    display: flex;
-    flex-direction: column;
-    margin: 10px 40px -10px -30px;
-    padding: 10px;
-    flex: 1;
-    background: white;
-
-
-}
