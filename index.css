@@ -43,9 +43,8 @@ h2{
 }
 
 .indexImage{
-    width: 25vw;
+    width: 33%;
     height: auto;
-    margin: 2vw;
 }
 
 h3{
@@ -59,8 +58,6 @@ h3{
     display: flex;
     align-items: center;
     width: 100%;
-    border-radius: 25px;
-    border: solid rgba(0, 0, 0, 0.7) 2px;
 }
 
 .indexBlock{
@@ -69,18 +66,6 @@ h3{
     border-radius: 10px;
     background-color: #9a8fa8;
     
-}
-
-#shiiBlock{
-    background: linear-gradient(to bottom, #a07a5a 0%, #f3eadf 100%);
-}
-
-#lionsBlock{
-    background: linear-gradient(to bottom, #f9f9f7 0%, #f3eee5 100%);
-}
-
-#blueBlock{
-    background: linear-gradient(to top, #c7d7e8, #8fa9c7);
 }
 
 a{
