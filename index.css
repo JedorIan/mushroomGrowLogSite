@@ -117,8 +117,10 @@ a{
 .testText{
     display: flex;
     flex-direction: column;
-    margin: 5px;
+    margin: 5px 20px -5px -10px;
     flex: 1;
     border: solid white 2px;
     background: white;
+
+
 }
