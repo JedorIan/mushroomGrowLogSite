@@ -60,9 +60,7 @@ h3{
 .infoBlock{
     display: flex;
     align-items: center;
-    margin: 8vw;
-    height: auto;
-    padding: 15px;
+    width: 100%;
     border-radius: 25px;
     border: solid rgba(0, 0, 0, 0.7) 2px;
 }
