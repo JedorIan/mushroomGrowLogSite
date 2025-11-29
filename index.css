@@ -111,10 +111,12 @@ a{
 .testInfo{
     display: flex;
     align-items: center;
+    padding: 20px;
 }
 
 .testText{
     display: flex;
     flex-direction: column;
+    margin: 5px;
     flex: 1;
 }
