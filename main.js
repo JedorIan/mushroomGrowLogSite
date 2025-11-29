@@ -14,7 +14,7 @@ document.addEventListener("scroll", () => {
 })
 
 function openMenu() {
-    document.betElementById("mobileMenu").style.right = "0";
+    document.getElementById("mobileMenu").style.right = "0";
 }
 
 function closeMenu() {
