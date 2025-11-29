@@ -64,6 +64,7 @@ header h1{
     flex-direction: column;
     transition: right 0.3s ease;
     z-index: 3000;
+    background-color: black;
 }
 
 .close-btn{
