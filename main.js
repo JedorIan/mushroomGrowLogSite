@@ -8,3 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         .catch(err => console.error("Header load failed:", err));
 });
+
+document.addEventListener("scroll", () => {
+    document.body.style.setProperty("--scroll", window.scrollY + "px");
+})
