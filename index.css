@@ -23,9 +23,7 @@ h2{
 
 .titleBlock{
     width: 75vw;
-    background: linear-gradient(to bottom, #4caf50 0%, #87ceeb 40%, #556b2f 70%, #a0522d 100%);
-    border: solid #b39ddb 5px;
-    border-radius: 53%;
+    
     margin: 20px;
 }
 
