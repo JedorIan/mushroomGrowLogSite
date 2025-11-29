@@ -70,13 +70,11 @@ h3{
     display: grid;
     grid-template-columns: 2fr 1fr;
     width: 100%;
-    margin: 10px 0 10px 0;
 }
 
 .indexBlock{
     width: 100%;
     margin: 10px 0 10px 0;
-    
 }
 
 a{
@@ -86,4 +84,5 @@ a{
 #infoBlock, .indexBlock{
     background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(6px);
+    border: solid black 1px;
 }
