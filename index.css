@@ -1,7 +1,11 @@
 body{
     display: flex;
     flex-direction: column;
-    background: #4a3f5c;
+    background-image: url(/mushroomgrow/images/backimage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
     justify-content: center;
     align-items: center;
 }
