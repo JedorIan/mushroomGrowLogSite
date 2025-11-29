@@ -21,10 +21,8 @@ h2{
     margin: 0;
 }
 
-.titleBlock{
-    width: 75vw;
-    
-    margin: 20px;
+.titleBlock h1{
+    font-size: 15vw;
 }
 
 .textBlock{
