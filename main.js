@@ -12,3 +12,11 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("scroll", () => {
     document.body.style.setProperty("--scroll", window.scrollY + "px");
 })
+
+function openMenu() {
+    document.betElementById("mobileMenu").style.right = "0";
+}
+
+function closeMenu() {
+    document.getElementById("mobileMenu").style.right = "-100%";
+}
