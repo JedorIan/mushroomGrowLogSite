@@ -23,7 +23,12 @@ h2{
 
 .titleBlock h1{
     font-size: 12vw;
-    text-decoration: wavy;
+    text-decoration: underline;
+}
+
+.titleBlock h3{
+    font-size: 10vw;
+    text-decoration: none;
 }
 
 .textBlock{
