@@ -38,7 +38,6 @@ h2{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: #4c662f;
 }
 
 .logoImg{
@@ -69,6 +68,8 @@ h3{
     grid-template-columns: 2fr 1fr;
     width: 100%;
     margin: 10px 0 10px 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
 }
 
 .indexBlock{
