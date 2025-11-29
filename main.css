@@ -83,7 +83,11 @@ header h1{
     }
 }
 
-
+.headerTitle{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 body{
     margin: 0;
