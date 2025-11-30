@@ -99,3 +99,7 @@ a{
     border-bottom: solid black 1px;
     border-top: solid black 1px;
 }
+
+.titleBlock{
+    height: 30vw;
+}
