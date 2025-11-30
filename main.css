@@ -73,7 +73,7 @@ header h1{
     align-self: flex-end;
     margin-right: 10vw;
     cursor: pointer;
-    font-size: 3vw;
+    font-size: 10vw;
 }
 
 @media (max-width: 768px){
