@@ -66,7 +66,7 @@ header h1{
     flex-direction: column;
     transition: right 0.3s ease;
     z-index: 3000;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 .close-btn{
