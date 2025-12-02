@@ -96,6 +96,8 @@ body{
     font-family: "Texturina", sans-serif;
     text-align: center;
     font-weight: 700;
+    color: white;
+    background-color: black;
 }
 
 .mushroomName{

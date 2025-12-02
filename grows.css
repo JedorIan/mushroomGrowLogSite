@@ -18,7 +18,7 @@
     margin: 3vw;
     border: solid black 3px;
     border-radius: 25px;
-    background: #f5dc90;
+    background: rgba(0, 0, 0, .15);
 }
 
 a h2{
