@@ -8,6 +8,7 @@ body{
     background-attachment: scroll;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 
 body::before{
@@ -94,7 +95,7 @@ a{
 }
 
 #infoBlock, .indexBlock{
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(6px);
     border-bottom: solid black 1px;
     border-top: solid black 1px;
@@ -102,5 +103,4 @@ a{
 
 .titleBlock{
     height: 50vw;
-    color: white;
 }
