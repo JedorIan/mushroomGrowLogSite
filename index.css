@@ -94,7 +94,7 @@ a{
 }
 
 #infoBlock, .indexBlock{
-    background-color: rgba(255, 255, 255, 0.025);
+    background-color: rgba(255, 255, 255, 0.015);
     backdrop-filter: blur(6px);
     border-bottom: solid black 1px;
     border-top: solid black 1px;
