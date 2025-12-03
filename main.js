@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const submenu = item.nextElementSibling;
             if (submenu && submenu.classList.contains('submenu')) {
                 e.preventDefault();
-                submenu.style.display = (submenu.style.display === 'blobk') ? 'none' : 'block';
+                submenu.style.display = (submenu.style.display === 'block') ? 'none' : 'block';
             }
         });
     });
