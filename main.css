@@ -202,3 +202,18 @@ p{
     font-size: 8vw;
     margin: 2vw;
 }
+
+/* Hide submenus by default */
+.submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding-left: 15px;
+}
+
+/* Open submenu when checkbox is checked */
+#submenuMushrooms:checked ~ .submenu,
+#submenuLogs:checked ~ .submenu,
+#submenuBundles:checked ~ .submenu {
+    max-height: 500px; /* adjust if needed */
+}
