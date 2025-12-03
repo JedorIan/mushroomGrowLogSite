@@ -20,3 +20,17 @@ function openMenu() {
 function closeMenu() {
     document.getElementById("mobileMenu").style.right = "-100%";
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const menuItems = document.querySelectorAll ('#mobileMenu > ul > li > a');
+
+    menuItems.forEach(item => {
+        item.addEventListener('click', (e) => {
+            const submenu = item.nextElementSibling;
+            if (submenu && submenu.classList.contains('submenu')) {
+                e.preventDefault();
+                submenu.style.display = (submenu.style.display === 'blobk') ? 'none' : 'block';
+            }
+        });
+    });
+});

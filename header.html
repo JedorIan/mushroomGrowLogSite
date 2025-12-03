@@ -4,17 +4,33 @@
 <div class="hamburger" onclick="openMenu()">[Menu]</div>
 <nav id="mobileMenu" class="mobile-menu">
     <div class="close-btn" onclick="closeMenu()">X</div>
-    <a href="/mushroomgrow/index.html">
-        <span>Main Page</span>
-    </a> 
-    <a href="/mushroomgrow/mushrooms.html">
-        <span> The Mushrooms</span>
-    </a>
-    <a href="/mushroomgrow/grows.html">
-        <span>The Logs</span>
-    </a>
-    <a href="/mushroomgrow/bundles.html">
-        <span>The Bundles</span>
-    </a>
+    <ul>
+        <li>
+            <a href="/mushroomgrow/index.html">Main Page</a> 
+        </li>
+        <li>
+            <a href="#">The Mushrooms</a>
+            <ul class="submenu">
+                <li><a href="/mushroomgrow/mushrooms/shiitake.html">Shiitake</a></li>
+                <li><a href="/mushroomgrow/mushrooms/lions.html">Lions Mane</a></li>
+                <li><a href="/mushroomgrow/mushrooms/blueoyster.html">Blue Oyster</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">The Logs</a>
+            <ul class="submenu">
+                <li><a href="/mushroomgrow/grows/shiigrow.html">Shiitake</a></li>
+                <li><a href="/mushroomgrow/grows/lionsgrow.html">Lions Mane</a></li>
+                <li><a href="/mushroomgrow/grows/bluegrow.html">Blue Oyster</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">The Bundles</a>
+            <ul class="submenu">
+                <li><a href="/mushroomgrow/bundles/sampler.html">Sampler</a></li>
+                <li><a href="/mushroomgrow/bundles/broth.html">Broth</a></li>
+            </ul>
+        </li>
+    </ul>
 
 </nav>
