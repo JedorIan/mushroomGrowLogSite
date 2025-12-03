@@ -56,7 +56,7 @@ header h1{
     position: relative;
 }
 
-#mobile-menu{
+.mobile-menu{
     position: fixed;
     top: 0;
     right: -100%;
