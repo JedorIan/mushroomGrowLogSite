@@ -9,28 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .catch(err => console.error("Header load failed:", err));
 });
 
+// Keep scroll variable update if you use it in CSS
 document.addEventListener("scroll", () => {
     document.body.style.setProperty("--scroll", window.scrollY + "px");
-})
-
-function openMenu() {
-    document.getElementById("mobileMenu").style.right = "0";
-}
-
-function closeMenu() {
-    document.getElementById("mobileMenu").style.right = "-100%";
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-    const menuItems = document.querySelectorAll ('#mobileMenu > ul > li > a');
-
-    menuItems.forEach(item => {
-        item.addEventListener('click', (e) => {
-            const submenu = item.nextElementSibling;
-            if (submenu && submenu.classList.contains('submenu')) {
-                e.preventDefault();
-                submenu.style.display = (submenu.style.display === 'block') ? 'none' : 'block';
-            }
-        });
-    });
 });
