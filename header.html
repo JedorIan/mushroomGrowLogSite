@@ -1,36 +1,47 @@
 <div class="headerTitle">
     <h1>Gourmet Decay</h1>
 </div>
-<div class="hamburger" onclick="openMenu()">[Menu]</div>
+
+<!-- Hamburger toggle -->
+<input type="checkbox" id="menuToggle" hidden>
+<label for="menuToggle" class="hamburger">☰</label>
+
 <nav id="mobileMenu" class="mobile-menu">
-    <div class="close-btn" onclick="closeMenu()">X</div>
     <ul>
         <li>
             <a href="/mushroomgrow/index.html">Main Page</a> 
         </li>
+
+        <!-- Mushrooms with CSS-only toggle -->
         <li>
-            <a href="#">The Mushrooms</a>
+            <label for="submenuMushrooms">The Mushrooms ▼</label>
+            <input type="checkbox" id="submenuMushrooms" hidden>
             <ul class="submenu">
                 <li><a href="/mushroomgrow/mushrooms/shiitake.html">Shiitake</a></li>
                 <li><a href="/mushroomgrow/mushrooms/lions.html">Lions Mane</a></li>
                 <li><a href="/mushroomgrow/mushrooms/blueoyster.html">Blue Oyster</a></li>
             </ul>
         </li>
+
+        <!-- Logs with CSS-only toggle -->
         <li>
-            <a href="#">The Logs</a>
+            <label for="submenuLogs">The Logs ▼</label>
+            <input type="checkbox" id="submenuLogs" hidden>
             <ul class="submenu">
                 <li><a href="/mushroomgrow/grows/shiigrow.html">Shiitake</a></li>
                 <li><a href="/mushroomgrow/grows/lionsgrow.html">Lions Mane</a></li>
                 <li><a href="/mushroomgrow/grows/bluegrow.html">Blue Oyster</a></li>
             </ul>
         </li>
+
+        <!-- Bundles with CSS-only toggle -->
         <li>
-            <a href="#">The Bundles</a>
+            <label for="submenuBundles">The Bundles ▼</label>
+            <input type="checkbox" id="submenuBundles" hidden>
             <ul class="submenu">
                 <li><a href="/mushroomgrow/bundles/sampler.html">Sampler</a></li>
                 <li><a href="/mushroomgrow/bundles/broth.html">Broth</a></li>
             </ul>
         </li>
     </ul>
-
 </nav>
