@@ -13,3 +13,25 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("scroll", () => {
     document.body.style.setProperty("--scroll", window.scrollY + "px");
 });
+
+document.addEventListener('change', (e) => {
+    if (e.target.id === 'menuToggle') {
+        const menu = document.getElementById('mobileMenu');
+        menu.style.right = e.target.checked ? '0' : '-100%';
+    }
+
+    if (e.target.id === 'submenuMushrooms') {
+        const submenu = e.target.nextElementSibling;
+        submenu.style.display = e.target.checked ? 'block' : 'none';
+    }
+
+    if (e.target.id === 'submenuLogs') {
+        const submenu = e.target.nextElementSibling;
+        submenu.style.display = e.target.checked ? 'block' : 'none';
+    }
+
+    if (e.target.id === 'submenuBundles') {
+        const submenu = e.target.nextElementSibling;
+        submenu.style.display = e.target.checked ? 'block' : 'none';
+    }
+});
