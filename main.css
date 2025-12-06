@@ -54,6 +54,7 @@ header h1{
 .mobile-menu{
     position: fixed;
     top: 0;
+    padding: 0;
     right: -100%;
     width: 70%;
     height: 100vh;
