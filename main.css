@@ -65,7 +65,7 @@ header h1{
     background-color: rgba(0, 0, 0, 0.75);
 }
 
-.close-btn{
+.mobileMenu .closeBtn{
     align-self: right;
     margin-right: 3vw;
     cursor: pointer;
